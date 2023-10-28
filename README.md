@@ -47,3 +47,14 @@ This is a detailed explanation of each feature:
 16. poutcome: outcome of the previous marketing campaign (categorical: "unknown","other","failure","success")
 
 The target variable was in the (binary: "1","2") format. I changed its format to be (binary: 0, 1) where 0 means the client did not subscribe a term deposit and 1 means the client subscribed.
+
+## How to run the project
+
+You need to have docker installed on your machine.
+
+1. Clone the project
+2. cd into the project directory
+3. Run `docker build -t tukhtarov-zoomcamp-midterm-project .`
+4. Run `docker run -it --rm -p 9696:9696 tukhtarov-zoomcamp-midterm-project`
+
+Now you can make POST requests to http://0.0.0.0:9696/predict
