@@ -58,3 +58,31 @@ You need to have docker installed on your machine.
 4. Run `docker run -it --rm -p 9696:9696 tukhtarov-zoomcamp-midterm-project`
 
 Now you can make POST requests to http://0.0.0.0:9696/predict
+
+## Cloud deployment
+
+I deployed the service to https://render.com/ using this guide - https://render.com/docs/deploy-an-image
+
+Here are the url and client JSON object for testing:
+
+https://tukhtarov-zoomcamp-midterm-project.onrender.com/predict
+
+```json
+{'age': 59.0,
+ 'job': 'admin.',
+ 'marital_status': 'married',
+ 'education': 'secondary',
+ 'credit_in_default': 'no',
+ 'average_balance': 2343.0,
+ 'has_housing_loan': 'yes',
+ 'has_personal_loan': 'no',
+ 'contact_type': 'unknown',
+ 'day': 5.0,
+ 'month': 'may',
+ 'duration': 1042.0,
+ 'number_contacts': 1.0,
+ 'pdays': -1.0,
+ 'number_contacts_before': 0.0,
+ 'previous_outcome': 'unknown'}
+```
+You can try changing the values of the client object keys.
